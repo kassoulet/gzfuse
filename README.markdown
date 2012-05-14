@@ -44,7 +44,7 @@ All these limitations are to be fixed in the future if there is an use for it.
 Test case
 --------
 
-The test folder is linux-3.3.3. 40,358 items, totalling 445.2 MB
+The test folder is linux-3.3.3. 40,358 items, totalling 445.2 MB.
 After gzip, 127.3 MB.
 
     # compress all files

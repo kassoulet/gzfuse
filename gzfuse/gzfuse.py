@@ -154,12 +154,14 @@ class Loopback(Operations):
         return r 
             
 
-if __name__ == "__main__":
+def main():
     if len(argv) != 3:
         print 'usage: %s <root> <mountpoint>' % argv[0]
         exit(1)
     fuse = FUSE(Loopback(argv[1]), argv[2], 
                 foreground=True, debug=False, nothreads=True)
     
-print 'gzfuse exited. %d files read, %d files really read' % (counter, really)
+    print 'gzfuse exited. %d files read, %d files really read' % (counter, really)
     
+if __name__ == "__main__":
+    main()
